@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Voyage</string>
+    <string name="main_title">Nouveau Kit</string>
+    <string name="main_depart">Départ</string>
+    <string name="main_destination">Destination</string>
+    <string name="main_valider">Valider</string>
+    <string name="main_progress">Chargement...</string>
+    <string name="main_nom_option">Nom de l\'option</string>
+</resources>
