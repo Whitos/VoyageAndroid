@@ -17,7 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editTextDepart;
     EditText editTextDestination;
+    EditText editTextNomOption;
+    EditText editTextPrixForfaitaire;
+    EditText editTextNombreNuits;
+    EditText editTextPrixNuit;
+
     Button buttonCreerKit;
+    Button buttonAjouterOptions;
 
     KitVoyage kitVoyage;
 
@@ -30,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         buttonCreerKit = findViewById(R.id.buttonValiderKit);
         editTextDepart = findViewById(R.id.editTextDepart);
         editTextDestination = findViewById(R.id.editTextDestination);
+        editTextNomOption = findViewById(R.id.editTextNomOption);
+        editTextPrixForfaitaire = findViewById(R.id.editTextPrixForfaitaire);
+        editTextNombreNuits = findViewById(R.id.editTextNombreNuits);
+        editTextPrixNuit = findViewById(R.id.editTextPrixParNuit);
+        buttonAjouterOptions = findViewById(R.id.buttonAjouterOption);
+
 
         buttonCreerKit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +53,22 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, kitVoyage.toString(), Toast.LENGTH_LONG).show();
             }
         });
+
+        buttonAjouterOptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nomOption = editTextNomOption.getText().toString();
+                double prixForfaitaire = Double.parseDouble(editTextPrixForfaitaire.getText().toString());
+                int nombreNuits = Integer.parseInt(editTextNombreNuits.getText().toString());
+                double prixNuit = Double.parseDouble(editTextPrixNuit.getText().toString());
+                Sejour sejour = new Sejour(nomOption, prixForfaitaire, nombreNuits, prixNuit);
+                kitVoyage.ajouterOption(sejour);
+                Log.i("kit", kitVoyage.toString());
+                Toast.makeText(MainActivity.this, kitVoyage.toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+
 
 
 //    KitVoyage kit = new KitVoyage("Marseille","Istanbul");

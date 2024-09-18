@@ -48,12 +48,13 @@
         android:id="@+id/buttonValiderKit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="24dp"
         android:background="#FBFBFB"
         android:backgroundTint="#FFFFFF"
         android:text="@string/main_valider"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDestination"
         app:rippleColor="#B62121" />
@@ -69,15 +70,61 @@
         app:layout_constraintStart_toStartOf="@+id/textViewTitle"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewNomOption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:text="Nom de l'option :"
+    <EditText
+        android:id="@+id/editTextNomOption"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/main_nom_option"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonValiderKit" />
+
+    <EditText
+        android:id="@+id/editTextPrixForfaitaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/main_prix_forfaitaire"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomOption"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomOption" />
+
+    <EditText
+        android:id="@+id/editTextNombreNuits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/main_nb_nuits"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrixForfaitaire"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrixForfaitaire" />
+
+    <EditText
+        android:id="@+id/editTextPrixParNuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/main_prix_nuit"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombreNuits"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreNuits" />
+
+    <Button
+        android:id="@+id/buttonAjouterOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrixParNuit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

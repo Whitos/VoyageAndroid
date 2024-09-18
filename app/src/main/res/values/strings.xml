@@ -6,4 +6,8 @@
     <string name="main_valider">Valider</string>
     <string name="main_progress">Chargement...</string>
     <string name="main_nom_option">Nom de l\'option</string>
+    <string name="main_prix_forfaitaire">Prix forfaitaire</string>
+    <string name="main_nb_nuits">Nombre nuits</string>
+    <string name="main_prix_nuit">Prix par nuit</string>
+    <string name="main_ajouter">Ajouter</string>
 </resources>
