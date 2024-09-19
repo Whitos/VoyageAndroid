@@ -1,13 +1,12 @@
 <resources>
-    <string name="app_name">Voyage</string>
-    <string name="main_title">Nouveau Kit</string>
-    <string name="main_depart">Départ</string>
-    <string name="main_destination">Destination</string>
-    <string name="main_valider">Valider</string>
-    <string name="main_progress">Chargement...</string>
-    <string name="main_nom_option">Nom de l\'option</string>
-    <string name="main_prix_forfaitaire">Prix forfaitaire</string>
-    <string name="main_nb_nuits">Nombre nuits</string>
-    <string name="main_prix_nuit">Prix par nuit</string>
-    <string name="main_ajouter">Ajouter</string>
+    <string name="app_name">Travel</string>
+    <string name="app_start">Commencer</string>
+    <string name="app_title">Nouveau Kit</string>
+    <string name="app_depart">Départ</string>
+    <string name="app_edit_depart">Lieu de départ</string>
+    <string name="app_arrivee">Arrivée</string>
+    <string name="app_edit_arrivee">Lieu d\'arrivée</string>
+    <string name="app_valider">Valider</string>
+    <string name="app_depart_arrivee">Départ et Arrivée</string>
+    <string name="app_type">Choissisez le type</string>
 </resources>

@@ -1,8 +1,9 @@
 package com.example.voyage;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class KitVoyage {
+public class KitVoyage implements Serializable {
 
     private ArrayList<OptionVoyage> lesOptions;
 	private String depart;

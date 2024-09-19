@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#76CEF4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateOptionsActivity">
+
+
+    <EditText
+        android:id="@+id/editTextArrivee"
+        android:layout_width="307dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_input"
+        android:ems="14"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewDepartArrivee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Choissisez le type"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDepartArrivee" />
+
+    <Button
+        android:id="@+id/buttonSejours"
+        android:layout_width="209dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Séjours"
+        android:textColor="#40B59F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewType"
+        app:rippleColor="#56FFFFFF"
+        app:strokeColor="#40B59F"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/buttonTransports"
+        android:layout_width="209dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Transports"
+        android:textColor="#40B59F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSejours"
+        app:rippleColor="#56FFFFFF"
+        app:strokeColor="#40B59F"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Récapitulatif"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTransports" />
+</androidx.constraintlayout.widget.ConstraintLayout>
